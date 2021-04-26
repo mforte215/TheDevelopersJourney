@@ -1,0 +1,18 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}">
+<link href="{% static 'blog/css/blog.css' %}" rel="stylesheet">
+<link rel="shortcut icon" href="{%  static 'blog/images/favicon.ico' %}">
+<title>The Developer's Journey</title>
+</head>
+<body>
+<header>
+{% include "blog\navbar.html" %}
+</header>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>

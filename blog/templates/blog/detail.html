@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+{% if blog %}
+    <div class="blog-detail-container">
+    <h1 class="blog-detail-title">{{blog.title}}</h1>
+    <div class="blog-detail-info">
+    <h3>{{blog.teaser}}</h3>
+    <h4>by Mark Forte at {{blog.createdAt}}</h4>
+    </div>
+    <div>{{blog.body|safe}}</div>
+    </div>
+{% else %}
+    <p>Sorry something went wrong.</p>
+{% endif %}
+
+{% endblock %}

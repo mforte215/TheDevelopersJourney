@@ -6,20 +6,20 @@
 <h1 class="top-info">Hi, my name is Mark Forte. I am starting a blog to share my journey to learn new web development topics and technologies. Enjoy and I hope you learn something from my expirence!</h1>
 </div>
 {% if latest_blog_list %}
+  <div class="blog-card-container">
     {% for blog in latest_blog_list %}
 
   <div class="blog-card">
     <div class="meta">
-      <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+      <div class="photo" style="background-image: url({{blog.imageUrl}})"></div>
       <ul class="details">
         <li class="author"><a href="#">{{blog.createdBy}}</a></li>
         <li class="date">{{blog.createdAt}}</li>
         <li class="tags">
           <ul>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">Code</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
+          {% for tag in blog.tags.all %}
+            <li>{{tag.name}}</li>
+            {% endfor %}
           </ul>
         </li>
       </ul>
@@ -34,6 +34,7 @@
     </div>
   </div>
     {% endfor %}
+    </div>
 {% else %}
     <p>No blogs are available.</p>
 {% endif %}

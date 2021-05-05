@@ -20,6 +20,7 @@ class Blog(models.Model):
     body = RichTextField()
     teaser = models.CharField(max_length=100, blank=False, default='')
     tags = TaggableManager(through=UUIDTaggedItem)
+    imageUrl = models.CharField(max_length=500, blank=True)
 
     def __str__(self):
         selfString = self.title + " by " + self.createdBy.username

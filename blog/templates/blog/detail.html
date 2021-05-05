@@ -8,6 +8,9 @@
     <h3>{{blog.teaser}}</h3>
     <h4>by Mark Forte at {{blog.createdAt}}</h4>
     </div>
+    <div class="blog-detail-image-container">
+     <img src="{{blog.imageUrl}}" alt="header image" height="275px" width="800px"> 
+    </div>
     <div>{{blog.body|safe}}</div>
     </div>
 {% else %}

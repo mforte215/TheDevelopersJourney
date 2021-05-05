@@ -80,3 +80,13 @@
         overflow-y: auto;
     }
 }
+
+.logo-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo-link :active {
+    text-decoration: none;
+    color: #000;
+}

@@ -1,9 +1,7 @@
 from pathlib import Path
 import os
-import environ
 import django_heroku
-env = environ.Env()
-environ.Env.read_env()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,10 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-DEV_DB_NAME = env('DVPGN')
-DEV_PASS= env("DVPGSB")
-DEV_DB_U = env("DVPGU")
-SECRET_KEY = env("SK")
+SECRET_KEY = os.environ.get('SK')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

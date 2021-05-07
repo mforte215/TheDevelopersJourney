@@ -80,16 +80,7 @@ DATABASES = {
     }
 }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DB'),
-        'USER': os.environ.get('User'),
-        'PASSWORD': os.environ.get('PW'),
-        'HOST': os.environ.get('DBHOST'),
-        'PORT': os.environ.get('DBP'),
-    }
-}
+
 
 
 # Password validation

@@ -1,9 +1,12 @@
 asgiref==3.3.4
-Django==3.2
+django
 django-ckeditor==6.0.0
 django-taggit==1.4.0
 psycopg2==2.8.6
-python-dotenv==0.17.0
 pytz==2021.1
 six==1.15.0
 sqlparse==0.4.1
+django-environ
+gunicorn
+django-heroku
+whitenoise

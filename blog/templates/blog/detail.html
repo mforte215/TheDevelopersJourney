@@ -5,8 +5,13 @@
     <div class="blog-detail-container">
     <h1 class="blog-detail-title">{{blog.title}}</h1>
     <div class="blog-detail-info">
-    <h3>{{blog.teaser}}</h3>
-    <h4>by Mark Forte at {{blog.createdAt}}</h4>
+    <p class="sub-detail-info">by Mark Forte at {{blog.createdAt}}</p>
+    </div>
+    <div class="blog-image-container">
+    <figure>
+    <img class="blog-detail-image" src="{{blog.imageUrl}}"></img>
+    <figcaption><p class="blog-detail-image-caption">{{blog.imageCaption}}</p></figcaption>
+    </figure>
     </div>
     <div>{{blog.body|safe}}</div>
     </div>

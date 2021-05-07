@@ -18,8 +18,10 @@ class Blog(models.Model):
     createdAt = models.DateTimeField(auto_now_add=True, editable=False)
     createdBy = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     body = RichTextField()
-    teaser = models.CharField(max_length=100, blank=False, default='')
+    teaser = models.CharField(max_length=100, blank=True)
     tags = TaggableManager(through=UUIDTaggedItem)
+    imageUrl = models.CharField(max_length=500, blank=True)
+    imageCaption = models.CharField(max_length=250, blank=True)
 
     def __str__(self):
         selfString = self.title + " by " + self.createdBy.username

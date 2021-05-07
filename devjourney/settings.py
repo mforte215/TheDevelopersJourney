@@ -12,7 +12,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.environ.get('SK')
+#SECRET_KEY = os.environ.get('SK')
+SECRET_KEY = 'dcjdscuikdHHKhd@dh^%shefaeFEFAEFWEFFEDFCDECVFSBVDSZEFRGHTRYJULIZQZSQSXDWD-hjzcd_l!m5b(wy5$j879+@b^ysauvz5r+27zi#4s#o3=hthis+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -78,6 +79,18 @@ DATABASES = {
         'PORT': os.environ.get('DBP'),
     }
 }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd17uiihcdv48l0',
+        'USER': 'dmczjkesmmuaxc',
+        'PASSWORD': '6546d29e729f9f721627e3d508558ec5172172c4b7cf0252d0625ccd2964ba08',
+        'HOST': 'ec2-18-215-111-67.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
+
 
 
 # Password validation

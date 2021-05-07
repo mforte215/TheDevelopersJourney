@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import environ
 import django_heroku
 env = environ.Env()
 environ.Env.read_env()

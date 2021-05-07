@@ -70,8 +70,12 @@ WSGI_APPLICATION = 'devjourney.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('DB'),
+        'USER': os.environ.get('User'),
+        'PASSWORD': os.environ.get('PW'),
+        'HOST': os.environ.get('DBHOST'),
+        'PORT': os.environ.get('DBP'),
     }
 }
 

@@ -3,6 +3,7 @@
     width: 100%;
     background-color: transparent;
     position: relative;
+    z-index: 100;
 }
 
 .nav>.nav-header {
@@ -29,6 +30,7 @@
 .nav-title-link {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 .nav-title-link :active {
@@ -70,7 +72,7 @@
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #333;
+        background-color: rgb(255, 255, 255);
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -80,7 +82,7 @@
     .nav>.nav-links>a {
         display: block;
         width: 100%;
-        color: white;
+        color: black;
     }
     .nav>#nav-check:not(:checked)~.nav-links {
         height: 0px;

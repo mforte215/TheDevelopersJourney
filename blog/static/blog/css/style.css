@@ -1,7 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(255, 255, 255);
-    font-size: larger;
     box-sizing: border-box;
 }
 
@@ -9,7 +8,6 @@ body {
     width: 80%;
     margin: auto;
     text-align: center;
-    font-size: 2.5em;
 }
 
 .top-info-container {
@@ -77,15 +75,15 @@ body {
 }
 
 .blog-detail-container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     text-align: left;
 }
 
 .blog-detail-title {
-    font-size: 3.5em;
     font-weight: normal;
     margin-bottom: 0;
+    font-size: 4em;
 }
 
 .blog-detail-body {
@@ -126,4 +124,10 @@ body {
 
 .sub-detail-info {
     margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-detail-title {
+        font-size: 2em;
+    }
 }

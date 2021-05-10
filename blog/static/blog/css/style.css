@@ -8,6 +8,7 @@ body {
     width: 80%;
     margin: auto;
     text-align: center;
+    font-size: 2.2em;
 }
 
 .top-info-container {
@@ -129,5 +130,11 @@ body {
 @media only screen and (max-width: 600px) {
     .blog-detail-title {
         font-size: 2em;
+    }
+    .top-info {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: unset;
     }
 }

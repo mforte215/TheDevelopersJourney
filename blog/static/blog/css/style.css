@@ -85,6 +85,8 @@ body {
     font-weight: normal;
     margin-bottom: 0;
     font-size: 4em;
+    width: 95%;
+    margin-left: 5%;
 }
 
 .blog-detail-body {
@@ -97,7 +99,8 @@ body {
     font-weight: normal;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 98%;
+    width: 95%;
+    margin-left: 6%;
 }
 
 .blog-card-container {
